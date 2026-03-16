@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samriddhi Saxena | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFFCF6; /* Very light, warm cream */
+            color: #524538; /* Soft warm dark brown */
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .glass-header {
+            background: rgba(255, 252, 246, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 107, 53, 0.15);
+        }
+
+        /* Base Card Shadow */
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        /* Enhanced Interactive Hover Class for EVERYTHING */
+        .interactive-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+        }
+        .interactive-hover:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.15);
+            border-color: rgba(255, 107, 53, 0.4);
+            z-index: 10;
+        }
+
+        /* Special hover for text elements */
+        .text-hover:hover {
+            transform: scale(1.02);
+            color: #FF6B35;
+            transition: all 0.3s ease;
+        }
+
+        /* Pill hover effect */
+        .pill-hover {
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .pill-hover:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 15px rgba(255, 107, 53, 0.2);
+            background-color: #FFEEDF;
+            color: #FF6B35;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #FF6B35 0%, #FFB800 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #FF6B35 0%, #FFB800 100%);
+        }
+
+        .gradient-bg-light {
+            background: linear-gradient(135deg, #FFEEDF 0%, #FFF7E5 100%);
+        }
+
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FFFCF6; }
+        ::-webkit-scrollbar-thumb { background: #FFD2B8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #FF6B35; }
+        
+        .blob-bg {
+            position: absolute;
+            filter: blur(90px);
+            z-index: -1;
+            opacity: 0.5;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="selection:bg-[#FFD2B8] selection:text-[#524538]">
+
+    <div class="blob-bg bg-[#FFB800] w-[500px] h-[500px] top-[-100px] left-[-100px]"></div>
+    <div class="blob-bg bg-[#FF6B35] w-[600px] h-[600px] top-[40%] right-[-200px]"></div>
+
+    <nav class="fixed top-0 w-full p-5 md:px-16 flex justify-between items-center z-50 glass-header">
+        <div class="text-2xl font-extrabold tracking-tight hover:scale-105 transition-transform cursor-pointer text-[#524538]">Samriddhi<span class="text-[#FF6B35]">.</span></div>
+        <div class="hidden lg:flex space-x-8 text-sm font-bold text-[#8A7968]">
+            <a href="#about" class="hover:text-[#FF6B35] hover:-translate-y-0.5 transition-all">About</a>
+            <a href="#experience" class="hover:text-[#FF6B35] hover:-translate-y-0.5 transition-all">Experience</a>
+            <a href="#projects" class="hover:text-[#FF6B35] hover:-translate-y-0.5 transition-all">Projects</a>
+            <a href="#skills" class="hover:text-[#FF6B35] hover:-translate-y-0.5 transition-all">Skills</a>
+            <a href="#leadership" class="hover:text-[#FF6B35] hover:-translate-y-0.5 transition-all">Leadership & Extras</a>
+        </div>
+        <a href="#contact" class="hidden md:inline-block gradient-bg text-white px-7 py-2.5 rounded-full text-sm font-bold hover:scale-110 transition-transform shadow-lg shadow-[#FF6B35]/30">
+            Let's Connect
+        </a>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 md:px-16 min-h-[90vh] flex flex-col justify-center relative overflow-hidden">
+        <div class="max-w-5xl mx-auto w-full relative z-10 reveal">
+            
+            <div class="inline-block gradient-bg-light px-5 py-2 rounded-full text-sm font-bold text-[#FF6B35] shadow-sm border border-[#FFD2B8] mb-6 hover:scale-105 hover:shadow-md transition-all cursor-default">
+                🎓 B.Tech ECE Student @ PDEU
+            </div>
+            
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black text-[#524538] leading-[1.0] mb-4 tracking-tighter origin-left transition-transform duration-500 hover:scale-[1.02] cursor-default">
+                Samriddhi<br>Saxena<span class="text-[#FF6B35]">.</span>
+            </h1>
+            
+            <h2 class="text-2xl md:text-3xl font-extrabold text-[#FF6B35] mb-6 tracking-tight origin-left transition-transform duration-500 hover:scale-[1.02] cursor-default">
+                Building intelligent hardware &amp; robotics.
+            </h2>
+            
+            <p class="text-sm md:text-base text-[#8A7968] max-w-xl font-semibold leading-relaxed mb-10 hover:text-[#524538] transition-colors cursor-default">
+                I specialize in electronics, embedded systems, and rapid prototyping. I turn concepts into patented, tangible products.
+            </p>
+
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="gradient-bg text-white font-bold px-8 py-4 rounded-full hover:scale-110 transition-transform shadow-xl shadow-[#FF6B35]/30">
+                    Explore My Work
+                </a>
+                <a href="#contact" class="bg-white text-[#524538] border-2 border-[#FFEEDF] font-bold px-8 py-4 rounded-full hover:border-[#FF6B35] hover:text-[#FF6B35] hover:scale-105 transition-all shadow-sm">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 md:px-16 bg-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center reveal">
+            
+            <div class="md:col-span-7">
+                <h2 class="text-4xl font-extrabold mb-6 text-[#524538] text-hover origin-left inline-block cursor-default">About Me</h2>
+                <p class="text-[#8A7968] font-medium leading-relaxed mb-6 hover:text-[#524538] transition-colors cursor-default">
+                    I am an Electronics and Communication Engineering undergraduate (Class of 2027) at Pandit Deendayal Energy University, Gandhinagar. 
+                </p>
+                <p class="text-[#8A7968] font-medium leading-relaxed mb-8 hover:text-[#524538] transition-colors cursor-default">
+                    My passion lies at the intersection of physical design, embedded systems, and simulation. Whether I am building a gesture-controlled bot, filing patents for novel healthcare hardware, or running cyber-physical simulations in NVIDIA Isaac Sim, I am driven by the desire to create functional, innovative solutions.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-bold text-sm">
+                    <div class="flex items-center gap-4 bg-[#FFFCF6] p-3 rounded-2xl border border-[#FFEEDF] interactive-hover">
+                        <div class="w-10 h-10 rounded-full gradient-bg-light flex items-center justify-center text-[#FF6B35] text-lg">📍</div>
+                        <span class="text-[#524538]">Gandhinagar, India</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-[#FFFCF6] p-3 rounded-2xl border border-[#FFEEDF] interactive-hover">
+                        <div class="w-10 h-10 rounded-full gradient-bg-light flex items-center justify-center text-[#FF6B35] text-lg">🎓</div>
+                        <span class="text-[#524538]">B.Tech – ECE</span>
+                    </div>
+                    <a href="mailto:samriddhi0099@gmail.com" class="flex items-center gap-4 bg-[#FFFCF6] p-3 rounded-2xl border border-[#FFEEDF] interactive-hover col-span-1 sm:col-span-2">
+                        <div class="w-10 h-10 rounded-full gradient-bg-light flex items-center justify-center text-[#FF6B35] text-lg">✉️</div>
+                        <span class="text-[#524538]">samriddhi0099@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-5 flex flex-col gap-8">
+                
+                <div class="portrait-container w-full max-w-[300px] aspect-[4/5] rounded-[2.5rem] relative overflow-hidden shadow-2xl border-[6px] border-white mx-auto transition-transform duration-300 ease-out z-20" style="will-change: transform;">
+                    <img src="https://i.ibb.co/vx5jB3SM/Screenshot-2025-08-12-233723.png" alt="Samriddhi Saxena" class="absolute inset-0 w-full h-full object-cover z-10 transition-transform duration-700 hover:scale-110 cursor-pointer">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#FF6B35]/30 to-transparent z-20 pointer-events-none mix-blend-overlay"></div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover relative overflow-hidden z-10 -mt-16 mx-auto w-full max-w-[340px]">
+                    <div class="absolute top-0 left-0 w-full h-2 gradient-bg"></div>
+                    <div class="w-12 h-12 gradient-bg-light rounded-2xl flex items-center justify-center text-[#FF6B35] mb-4 text-xl shadow-sm border border-[#FFD2B8]">🎓</div>
+                    <h3 class="text-2xl font-extrabold mb-6 text-[#524538]">Education</h3>
+                    
+                    <div class="relative pl-5 border-l-2 border-[#FFD2B8] hover:border-[#FF6B35] transition-colors group">
+                        <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full gradient-bg ring-4 ring-white group-hover:scale-125 transition-transform"></div>
+                        <h4 class="text-base font-extrabold text-[#524538] group-hover:text-[#FF6B35] transition-colors">B.Tech ECE</h4>
+                        <p class="text-[#FF6B35] font-extrabold text-xs mb-1 mt-1">2023 — 2027</p>
+                        <p class="text-[#8A7968] font-medium text-sm leading-tight">Pandit Deendayal Energy University</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 px-6 md:px-16">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-4 text-center text-[#524538] text-hover origin-center inline-block w-full cursor-default reveal">Work Experience</h2>
+            <div class="w-20 h-1.5 gradient-bg mx-auto rounded-full mb-16 reveal"></div>
+
+            <div class="bg-white p-8 md:p-12 rounded-3xl border-2 border-[#FFEEDF] interactive-hover reveal relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 gradient-bg rounded-bl-full opacity-10 group-hover:scale-150 transition-transform duration-700"></div>
+                
+                <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-8 relative z-10">
+                    <div>
+                        <h3 class="text-3xl font-extrabold text-[#524538] mb-2 group-hover:text-[#FF6B35] transition-colors">Innovator / Intern</h3>
+                        <p class="text-xl font-bold text-[#8A7968]">InventX, IIT Gandhinagar</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 gradient-bg-light text-[#FF6B35] border border-[#FFD2B8] font-extrabold px-5 py-2 rounded-full text-sm inline-block shadow-sm group-hover:scale-105 transition-transform">
+                        May 2025 – July 2025
+                    </div>
+                </div>
+                
+                <ul class="space-y-5 text-[#8A7968] font-medium text-lg relative z-10">
+                    <li class="flex items-start gap-4 hover:translate-x-2 transition-transform cursor-default">
+                        <span class="text-[#FF6B35] mt-1 text-xl group-hover:rotate-90 transition-transform duration-300">✦</span>
+                        <span>Selected as 1 of 30 from 1200+ applicants nationwide for a 6-week innovation program by Maker Bhavan Foundation.</span>
+                    </li>
+                    <li class="flex items-start gap-4 hover:translate-x-2 transition-transform cursor-default">
+                        <span class="text-[#FF6B35] mt-1 text-xl group-hover:rotate-90 transition-transform duration-300">✦</span>
+                        <span>Developed a novel healthcare product through ideation and rapid prototyping: filed a patent application.</span>
+                    </li>
+                    <li class="flex items-start gap-4 hover:translate-x-2 transition-transform cursor-default">
+                        <span class="text-[#FF6B35] mt-1 text-xl group-hover:rotate-90 transition-transform duration-300">✦</span>
+                        <span>Led technical development and contributed to patent drafting and documentation.</span>
+                    </li>
+                    <li class="flex items-start gap-4 hover:translate-x-2 transition-transform cursor-default">
+                        <span class="text-[#FF6B35] mt-1 text-xl group-hover:rotate-90 transition-transform duration-300">✦</span>
+                        <span class="font-bold text-[#524538]">Awarded 3rd Prize for the final prototype presentation.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 md:px-16 bg-white border-y border-[#FFEEDF]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-4 reveal text-[#524538] text-hover inline-block origin-left cursor-default">Featured Projects</h2>
+            <div class="w-20 h-1.5 gradient-bg rounded-full mb-16 reveal"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover reveal flex flex-col group" onclick="openProjectModal('cps')">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">CPS-Based Warehouse Simulation</h3>
+                        <span class="text-xs font-extrabold text-[#FF6B35] bg-[#FFF0E5] border border-[#FFD2B8] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Ongoing</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">NVIDIA Isaac Sim</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Simulation</span>
+                    </div>
+                    <p class="text-[#8A7968] font-medium leading-relaxed mb-6 flex-grow line-clamp-3">Developing a cyber-physical simulation of dynamic RFID antenna coverage using NVIDIA Isaac Sim. Evaluating tag detection accuracy, localization error, and system latency through simulation.</p>
+                    <div class="mt-auto text-[#FFB800] font-extrabold flex items-center gap-2 group-hover:gap-4 transition-all bg-[#FFFCF6] px-4 py-2 rounded-xl w-max">
+                        Read Details <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover reveal flex flex-col group" style="transition-delay: 0.1s;" onclick="openProjectModal('gesture')">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">Gesture Controlled Bot</h3>
+                        <span class="text-xs font-extrabold text-[#FF6B35] bg-[#FFF0E5] border border-[#FFD2B8] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Ongoing</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">ESP32</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">PWM</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">UART</span>
+                    </div>
+                    <p class="text-[#8A7968] font-medium leading-relaxed mb-6 flex-grow line-clamp-3">Developing an ESP32-based wireless robot controlled via gesture input. Implementing PWM-based motor control for directional movement and integrating sensor modules and serial communication.</p>
+                    <div class="mt-auto text-[#FFB800] font-extrabold flex items-center gap-2 group-hover:gap-4 transition-all bg-[#FFFCF6] px-4 py-2 rounded-xl w-max">
+                        Read Details <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover reveal flex flex-col group" onclick="openProjectModal('earplug')">
+                    <div class="flex justify-between items-start mb-6">
+                        <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">User Controlled Self-Regulating Ear Plugs</h3>
+                        <span class="text-xs font-extrabold text-[#FFB800] bg-[#FFF9E5] border border-[#FFEEDF] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">May - Jul 2025</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Hardware Prototyping</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">3D Printing</span>
+                        <span class="gradient-bg text-white px-3 py-1 rounded-full text-xs font-bold shadow-md pill-hover">Patent Filed</span>
+                    </div>
+                    <p class="text-[#8A7968] font-medium leading-relaxed mb-6 flex-grow line-clamp-3">Led hardware prototyping and mechanical design of a self-regulating ear pressure device. Used 3D printing for enclosure development and functional testing, and contributed to the patent filing process.</p>
+                    <div class="mt-auto text-[#FFB800] font-extrabold flex items-center gap-2 group-hover:gap-4 transition-all bg-[#FFFCF6] px-4 py-2 rounded-xl w-max">
+                        Read Details <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 gap-8 reveal" style="transition-delay: 0.1s;">
+                    
+                    <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex flex-col group" onclick="openProjectModal('karaoke')">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">Karaoke Extraction</h3>
+                            <span class="text-xs font-extrabold text-[#8A7968] bg-[#FFFCF6] border border-[#FFEEDF] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Mar 2025</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">MATLAB</span>
+                            <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Signal Processing</span>
+                        </div>
+                        <p class="text-[#8A7968] font-medium leading-relaxed">Used MATLAB for signal separation to isolate instrumental tracks from music using frequency domain techniques.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex flex-col group" onclick="openProjectModal('arm')">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">Robotic Arm Demo</h3>
+                            <span class="text-xs font-extrabold text-[#8A7968] bg-[#FFFCF6] border border-[#FFEEDF] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Feb 2025</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Arduino</span>
+                            <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Servo Control</span>
+                        </div>
+                        <p class="text-[#8A7968] font-medium leading-relaxed">Created a robotic arm prototype for a robotics club workshop, integrating Arduino servo control to demonstrate real-time movement.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 md:px-16">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-extrabold mb-4 text-center text-[#524538] text-hover inline-block w-full origin-center cursor-default reveal">Technical Arsenal</h2>
+            <div class="w-20 h-1.5 gradient-bg mx-auto rounded-full mb-16 reveal"></div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 reveal">
+                
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover group">
+                    <div class="w-14 h-14 rounded-2xl gradient-bg-light border border-[#FFD2B8] text-[#FF6B35] flex items-center justify-center mb-6 text-3xl shadow-sm group-hover:scale-110 transition-transform duration-300">💻</div>
+                    <h3 class="text-xl font-extrabold mb-6 text-[#524538] group-hover:text-[#FF6B35] transition-colors">Programming & Firmware</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">C</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Python</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">8086 Assembly</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">ESP32 (Arduino core)</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">PWM Motor Control</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">UART Comm</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Sensor Interfacing</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover group">
+                    <div class="w-14 h-14 rounded-2xl gradient-bg-light border border-[#FFD2B8] text-[#FF6B35] flex items-center justify-center mb-6 text-3xl shadow-sm group-hover:scale-110 transition-transform duration-300">⚙️</div>
+                    <h3 class="text-xl font-extrabold mb-6 text-[#524538] group-hover:text-[#FF6B35] transition-colors">Tools & Simulation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Proteus</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">MATLAB</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Simulink</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">NVIDIA Isaac Sim</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">CST</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Ansys</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover group">
+                    <div class="w-14 h-14 rounded-2xl gradient-bg-light border border-[#FFD2B8] text-[#FF6B35] flex items-center justify-center mb-6 text-3xl shadow-sm group-hover:scale-110 transition-transform duration-300">🛠️</div>
+                    <h3 class="text-xl font-extrabold mb-6 text-[#524538] group-hover:text-[#FF6B35] transition-colors">Design & Prototyping</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">SolidWorks</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Autodesk Fusion</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">3D Printing</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Soldering</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Hardware Assembly</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover group">
+                    <div class="w-14 h-14 rounded-2xl gradient-bg-light border border-[#FFD2B8] text-[#FF6B35] flex items-center justify-center mb-6 text-3xl shadow-sm group-hover:scale-110 transition-transform duration-300">📄</div>
+                    <h3 class="text-xl font-extrabold mb-6 text-[#524538] group-hover:text-[#FF6B35] transition-colors">Research & Docs</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Patent Drafting</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Prior-Art Analysis</span>
+                        <span class="bg-[#FFFCF6] border border-[#FFEEDF] text-[#8A7968] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm pill-hover cursor-default">Technical Documentation</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership" class="py-24 px-6 md:px-16 bg-white border-t border-[#FFEEDF]">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <div class="reveal">
+                <h2 class="text-4xl font-extrabold mb-4 text-[#524538] text-hover origin-left inline-block cursor-default">Leadership & Teamwork</h2>
+                <div class="w-20 h-1.5 gradient-bg rounded-full mb-12"></div>
+
+                <div class="space-y-10">
+                    <div class="border-l-4 border-[#FFEEDF] pl-8 relative interactive-hover group border-transparent hover:border-transparent p-4 -ml-4 rounded-3xl">
+                        <div class="absolute -left-[14px] top-6 w-6 h-6 rounded-full gradient-bg ring-4 ring-white shadow-sm group-hover:scale-125 transition-transform duration-300"></div>
+                        <h3 class="text-2xl font-extrabold text-[#524538] mb-1 group-hover:text-[#FF6B35] transition-colors">Core Committee Member</h3>
+                        <p class="text-[#FF6B35] font-extrabold text-sm mb-4">Cretus (Robotics Club) | July 2024 — 2025</p>
+                        <p class="text-[#8A7968] font-medium leading-relaxed group-hover:text-[#524538] transition-colors">Conducted robotics sessions and led teams in building autonomous and manual bots for institutional workshops.</p>
+                    </div>
+
+                    <div class="border-l-4 border-[#FFEEDF] pl-8 relative interactive-hover group border-transparent hover:border-transparent p-4 -ml-4 rounded-3xl">
+                        <div class="absolute -left-[14px] top-6 w-6 h-6 rounded-full gradient-bg ring-4 ring-white shadow-sm group-hover:scale-125 transition-transform duration-300"></div>
+                        <h3 class="text-2xl font-extrabold text-[#524538] mb-1 group-hover:text-[#FF6B35] transition-colors">Electronics Team Member</h3>
+                        <p class="text-[#FF6B35] font-extrabold text-sm mb-4">IROCU'25 | Feb 2025</p>
+                        <p class="text-[#8A7968] font-medium leading-relaxed group-hover:text-[#524538] transition-colors">Worked on the integration of electronics and communication modules for UAVs in preparation for an ISRO-affiliated intercollegiate robotics competition.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-4xl font-extrabold mb-4 text-[#524538] mt-20 text-hover origin-left inline-block cursor-default">Achievements</h2>
+                <div class="w-20 h-1.5 gradient-bg rounded-full mb-10"></div>
+                
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center justify-between group">
+                        <div>
+                            <p class="font-extrabold text-xl text-[#524538] mb-1 group-hover:text-[#FF6B35] transition-colors">2nd Runner-up</p>
+                            <p class="text-[#8A7968] font-bold text-sm">InventX, IIT Gandhinagar</p>
+                        </div>
+                        <span class="gradient-bg text-white font-extrabold text-xs px-4 py-2 rounded-full shadow-md group-hover:scale-110 transition-transform">July 2025</span>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center justify-between group">
+                        <div>
+                            <p class="font-extrabold text-xl text-[#524538] mb-1 group-hover:text-[#FF6B35] transition-colors">Runners-up</p>
+                            <p class="text-[#8A7968] font-bold text-sm">RoboMasters Robotics Challenge, PDEU</p>
+                        </div>
+                        <span class="gradient-bg text-white font-extrabold text-xs px-4 py-2 rounded-full shadow-md group-hover:scale-110 transition-transform">April 2025</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal" style="transition-delay: 0.2s;">
+                <h2 class="text-4xl font-extrabold mb-4 text-[#524538] text-hover origin-left inline-block cursor-default">Workshops & Certifications</h2>
+                <div class="w-20 h-1.5 gradient-bg rounded-full mb-12"></div>
+
+                <ul class="flex flex-col gap-5">
+                    <li class="bg-white p-5 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center gap-5 group">
+                        <div class="w-14 h-14 shrink-0 gradient-bg-light border border-[#FFD2B8] rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:rotate-12 transition-transform duration-300">🤖</div>
+                        <div>
+                            <h4 class="font-extrabold text-[#524538] text-lg mb-1 group-hover:text-[#FF6B35] transition-colors">Robot Kinematics for Engineers</h4>
+                            <p class="text-sm font-bold text-[#FF6B35]">IIT Gandhinagar • 8 days, 2024</p>
+                        </div>
+                    </li>
+                    <li class="bg-white p-5 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center gap-5 group">
+                        <div class="w-14 h-14 shrink-0 gradient-bg-light border border-[#FFD2B8] rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:rotate-12 transition-transform duration-300">📡</div>
+                        <div>
+                            <h4 class="font-extrabold text-[#524538] text-lg mb-1 group-hover:text-[#FF6B35] transition-colors">RF Circuits & High Frequency Antenna Design</h4>
+                            <p class="text-sm font-bold text-[#FF6B35]">PDEU • 3 days, 2025</p>
+                        </div>
+                    </li>
+                    <li class="bg-white p-5 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center gap-5 group">
+                        <div class="w-14 h-14 shrink-0 gradient-bg-light border border-[#FFD2B8] rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:rotate-12 transition-transform duration-300">🧠</div>
+                        <div>
+                            <h4 class="font-extrabold text-[#524538] text-lg mb-1 group-hover:text-[#FF6B35] transition-colors">Brain-Computer Interface</h4>
+                            <p class="text-sm font-bold text-[#FF6B35]">PDEU • 2 days, 2025</p>
+                        </div>
+                    </li>
+                    <li class="bg-white p-5 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center gap-5 group">
+                        <div class="w-14 h-14 shrink-0 gradient-bg-light border border-[#FFD2B8] rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:rotate-12 transition-transform duration-300">📊</div>
+                        <div>
+                            <h4 class="font-extrabold text-[#524538] text-lg mb-1 group-hover:text-[#FF6B35] transition-colors">Core MATLAB Skills & Onramp</h4>
+                            <p class="text-sm font-bold text-[#FF6B35]">MathWorks • Multiple Certifications, 2024</p>
+                        </div>
+                    </li>
+                    <li class="bg-white p-5 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex items-center gap-5 group">
+                        <div class="w-14 h-14 shrink-0 gradient-bg-light border border-[#FFD2B8] rounded-2xl flex items-center justify-center text-2xl shadow-sm group-hover:rotate-12 transition-transform duration-300">📈</div>
+                        <div>
+                            <h4 class="font-extrabold text-[#524538] text-lg mb-1 group-hover:text-[#FF6B35] transition-colors">MATLAB Signal Processing Onramp</h4>
+                            <p class="text-sm font-bold text-[#FF6B35]">MathWorks • 2 hours, 2024</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="bg-[#524538] text-white pt-24 pb-12 px-6 md:px-16 mt-auto relative overflow-hidden">
+        <div class="absolute top-[-200px] left-[-100px] w-96 h-96 gradient-bg rounded-full filter blur-[100px] opacity-20 z-0"></div>
+        
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12 relative z-10">
+            
+            <div class="reveal">
+                <h2 class="text-5xl font-extrabold mb-6 tracking-tight text-white hover:scale-[1.02] origin-left transition-transform duration-300 cursor-default">Let's build something.</h2>
+                <p class="text-[#FFD2B8] font-medium mb-10 max-w-md text-lg hover:text-white transition-colors cursor-default">Currently looking for new opportunities in robotics, hardware simulation, and product development.</p>
+                <a href="mailto:samriddhi0099@gmail.com" class="gradient-bg text-white px-10 py-4 rounded-full font-bold hover:scale-110 transition-transform shadow-xl shadow-[#FF6B35]/40 inline-block">
+                    Say Hello &rarr;
+                </a>
+            </div>
+
+            <div class="flex flex-col gap-6 font-bold text-lg reveal" style="transition-delay: 0.2s;">
+                <div class="flex items-center gap-6 hover:translate-x-2 transition-transform">
+                    <span class="text-[#FF6B35] w-24 text-sm tracking-widest uppercase">Email</span>
+                    <a href="mailto:samriddhi0099@gmail.com" class="hover:text-[#FFB800] transition-colors text-white">samriddhi0099@gmail.com</a>
+                </div>
+                <div class="flex items-center gap-6 hover:translate-x-2 transition-transform">
+                    <span class="text-[#FF6B35] w-24 text-sm tracking-widest uppercase">Phone</span>
+                    <a href="tel:+919910506555" class="hover:text-[#FFB800] transition-colors text-white">+91-9910506555</a>
+                </div>
+                <div class="flex items-center gap-6 hover:translate-x-2 transition-transform">
+                    <span class="text-[#FF6B35] w-24 text-sm tracking-widest uppercase">Network</span>
+                    <a href="https://linkedin.com/in/samriddhi-saxena09" target="_blank" class="hover:text-[#FFB800] transition-colors text-white underline decoration-[#FF6B35]/50 hover:decoration-[#FFB800] underline-offset-4">LinkedIn</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="max-w-6xl mx-auto mt-24 pt-8 border-t border-white/10 text-center md:text-left text-sm text-[#FFD2B8]/70 font-bold relative z-10">
+            &copy; 2026 Samriddhi Saxena. Designed for Digital Portfolio.
+        </div>
+    </section>
+
+    <div id="project-modal" class="fixed inset-0 z-[200] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 bg-[#524538]/60 backdrop-blur-md p-4">
+        <div class="bg-white p-8 md:p-12 w-full max-w-3xl rounded-[2rem] relative shadow-2xl transform scale-95 transition-transform duration-300 border-2 border-[#FFEEDF]" id="modal-content-box">
+            <button onclick="closeProjectModal()" class="absolute top-6 right-6 text-[#8A7968] hover:text-[#FF6B35] hover:scale-110 bg-[#FFF0E5] hover:bg-[#FFEEDF] w-12 h-12 rounded-full flex items-center justify-center transition-all font-bold text-2xl">&times;</button>
+            <div id="modal-tag" class="inline-block px-4 py-1.5 rounded-full text-xs font-bold mb-6 border shadow-sm"></div>
+            <h2 id="modal-title" class="text-3xl md:text-4xl font-extrabold text-[#524538] mb-3"></h2>
+            <div id="modal-date" class="text-sm text-[#FFB800] font-extrabold mb-8 uppercase tracking-wider"></div>
+            <div id="modal-desc" class="text-[#8A7968] font-medium leading-relaxed space-y-4 text-lg"></div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll Reveal Animation
+        function initScrollReveal() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { 
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active'); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        }
+        
+        // Change Navbar Background on Scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-sm');
+                nav.style.background = "rgba(255, 252, 246, 0.95)";
+            } else {
+                nav.classList.remove('shadow-sm');
+                nav.style.background = "rgba(255, 252, 246, 0.85)";
+            }
+        });
+
+        // Parallax Portrait Effect
+        window.addEventListener('scroll', () => {
+            const portraitBox = document.querySelector('.portrait-container');
+            if(portraitBox) {
+                const rect = portraitBox.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                
+                // If portrait is in viewport, calculate floating offset
+                if(rect.top < windowHeight && rect.bottom > 0) {
+                    // Slight vertical shift based on scroll distance from center
+                    const offset = (rect.top - windowHeight / 2) * 0.1;
+                    portraitBox.style.transform = `translateY(${offset}px)`;
+                }
+            }
+        });
+
+        initScrollReveal();
+
+        // Project Data
+        const projectData = {
+            'cps': {
+                title: "CPS-Based Warehouse Simulation",
+                tag: "Ongoing", tagClass: "bg-[#FFF0E5] text-[#FF6B35] border-[#FFD2B8]",
+                date: "Jan 2026 - Present",
+                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Developing a cyber-physical simulation of dynamic RFID antenna coverage using NVIDIA Isaac Sim.</li><li>Evaluating tag detection accuracy, localization error, and system latency through simulation.</li></ul>"
+            },
+            'gesture': {
+                title: "Gesture Controlled Bot",
+                tag: "Ongoing", tagClass: "bg-[#FFF0E5] text-[#FF6B35] border-[#FFD2B8]",
+                date: "Jan 2026 - Present",
+                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Developing an ESP32-based wireless robot controlled via gesture input.</li><li>Implementing PWM-based motor control for directional movement.</li><li>Integrating sensor modules and serial communication for command processing.</li></ul>"
+            },
+            'earplug': {
+                title: "User Controlled Self-Regulating Ear Plugs",
+                tag: "Patent Filed", tagClass: "bg-[#FFF9E5] text-[#FFB800] border-[#FFEEDF]",
+                date: "May 2025 - July 2025",
+                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Led hardware prototyping and mechanical design of a self-regulating ear pressure device.</li><li>Used 3D printing for enclosure development and functional testing.</li><li>Contributed to patent filing and technical documentation.</li></ul>"
+            },
+            'karaoke': {
+                title: "Karaoke Extraction",
+                tag: "MATLAB", tagClass: "bg-gray-100 text-gray-500 border-gray-200",
+                date: "March 2025",
+                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Used MATLAB for signal separation and isolated instrumental from a music track using frequency domain techniques.</li></ul>"
+            },
+            'arm': {
+                title: "Robotic Arm for Workshop Demo",
+                tag: "Hardware Prototype", tagClass: "bg-gray-100 text-gray-500 border-gray-200",
+                date: "Feb 2025",
+                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Created a robotic arm prototype for a robotics club workshop.</li><li>Integrated Arduino servo control to demonstrate real-time movement.</li></ul>"
+            }
+        };
+
+        // Modal Logic
+        const modal = document.getElementById('project-modal');
+        const modalBox = document.getElementById('modal-content-box');
+        
+        function openProjectModal(id) {
+            const data = projectData[id];
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-date').innerText = data.date;
+            document.getElementById('modal-desc').innerHTML = data.desc;
+            
+            const tag = document.getElementById('modal-tag');
+            tag.innerText = data.tag;
+            tag.className = `inline-block px-4 py-1.5 rounded-full text-xs font-extrabold mb-6 border shadow-sm ${data.tagClass}`;
+
+            modal.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => modalBox.classList.replace('scale-95', 'scale-100'), 50);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            modalBox.classList.replace('scale-100', 'scale-95');
+            setTimeout(() => {
+                modal.classList.add('opacity-0', 'pointer-events-none');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+    </script>
+</body>
+</html>
