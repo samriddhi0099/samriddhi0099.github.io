@@ -79,6 +79,11 @@
         ::-webkit-scrollbar-track { background: #FFFCF6; }
         ::-webkit-scrollbar-thumb { background: #FFD2B8; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #FF6B35; }
+
+        /* Modal Scrollbar */
+        .modal-scrollbar::-webkit-scrollbar { width: 6px; }
+        .modal-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .modal-scrollbar::-webkit-scrollbar-thumb { background: #FFD2B8; border-radius: 4px; }
         
         .blob-bg {
             position: absolute;
@@ -245,11 +250,11 @@
                     </div>
                     <div class="flex flex-wrap gap-2 mb-6">
                         <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">NVIDIA Isaac Sim</span>
-                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Simulation</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Digital Twins</span>
                     </div>
                     <p class="text-[#8A7968] font-medium leading-relaxed mb-6 flex-grow line-clamp-3">Developing a cyber-physical simulation of dynamic RFID antenna coverage using NVIDIA Isaac Sim. Evaluating tag detection accuracy, localization error, and system latency through simulation.</p>
                     <div class="mt-auto text-[#FFB800] font-extrabold flex items-center gap-2 group-hover:gap-4 transition-all bg-[#FFFCF6] px-4 py-2 rounded-xl w-max">
-                        Read Details <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        Read Details & View Image <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
                     </div>
                 </div>
 
@@ -275,8 +280,8 @@
                         <span class="text-xs font-extrabold text-[#FFB800] bg-[#FFF9E5] border border-[#FFEEDF] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">May - Jul 2025</span>
                     </div>
                     <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Hardware Prototyping</span>
-                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">3D Printing</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Prototyping</span>
+                        <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">CAD</span>
                         <span class="gradient-bg text-white px-3 py-1 rounded-full text-xs font-bold shadow-md pill-hover">Patent Filed</span>
                     </div>
                     <p class="text-[#8A7968] font-medium leading-relaxed mb-6 flex-grow line-clamp-3">Led hardware prototyping and mechanical design of a self-regulating ear pressure device. Used 3D printing for enclosure development and functional testing, and contributed to the patent filing process.</p>
@@ -290,25 +295,31 @@
                     <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex flex-col group" onclick="openProjectModal('karaoke')">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">Karaoke Extraction</h3>
-                            <span class="text-xs font-extrabold text-[#8A7968] bg-[#FFFCF6] border border-[#FFEEDF] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Mar 2025</span>
+                            <span class="text-xs font-extrabold text-gray-500 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Mar 2025</span>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">MATLAB</span>
-                            <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Signal Processing</span>
+                            <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">DSP</span>
                         </div>
-                        <p class="text-[#8A7968] font-medium leading-relaxed">Used MATLAB for signal separation to isolate instrumental tracks from music using frequency domain techniques.</p>
+                        <p class="text-[#8A7968] font-medium leading-relaxed mb-4">Used MATLAB for signal separation to isolate instrumental tracks from music using frequency domain techniques.</p>
+                        <div class="mt-auto text-[#FFB800] font-extrabold flex items-center gap-2 group-hover:gap-4 transition-all bg-[#FFFCF6] px-4 py-2 rounded-xl w-max">
+                            Read Details & View Images <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
                     </div>
 
                     <div class="bg-white p-8 rounded-3xl border-2 border-[#FFEEDF] interactive-hover flex flex-col group" onclick="openProjectModal('arm')">
                         <div class="flex justify-between items-start mb-4">
                             <h3 class="text-2xl font-extrabold text-[#524538] pr-4 group-hover:text-[#FF6B35] transition-colors">Robotic Arm Demo</h3>
-                            <span class="text-xs font-extrabold text-[#8A7968] bg-[#FFFCF6] border border-[#FFEEDF] px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Feb 2025</span>
+                            <span class="text-xs font-extrabold text-gray-500 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full whitespace-nowrap shadow-sm group-hover:scale-110 transition-transform">Feb 2025</span>
                         </div>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Arduino</span>
                             <span class="gradient-bg-light text-[#FF6B35] px-3 py-1 rounded-full text-xs font-bold border border-[#FFEEDF] pill-hover">Servo Control</span>
                         </div>
-                        <p class="text-[#8A7968] font-medium leading-relaxed">Created a robotic arm prototype for a robotics club workshop, integrating Arduino servo control to demonstrate real-time movement.</p>
+                        <p class="text-[#8A7968] font-medium leading-relaxed mb-4">Created a robotic arm prototype for a robotics club workshop, integrating Arduino servo control to demonstrate real-time movement.</p>
+                        <div class="mt-auto text-[#FFB800] font-extrabold flex items-center gap-2 group-hover:gap-4 transition-all bg-[#FFFCF6] px-4 py-2 rounded-xl w-max">
+                            Read Details & View Images <span class="text-xl group-hover:translate-x-1 transition-transform">&rarr;</span>
+                        </div>
                     </div>
 
                 </div>
@@ -502,12 +513,14 @@
         </div>
     </section>
 
-    <div id="project-modal" class="fixed inset-0 z-[200] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 bg-[#524538]/60 backdrop-blur-md p-4">
-        <div class="bg-white p-8 md:p-12 w-full max-w-3xl rounded-[2rem] relative shadow-2xl transform scale-95 transition-transform duration-300 border-2 border-[#FFEEDF]" id="modal-content-box">
-            <button onclick="closeProjectModal()" class="absolute top-6 right-6 text-[#8A7968] hover:text-[#FF6B35] hover:scale-110 bg-[#FFF0E5] hover:bg-[#FFEEDF] w-12 h-12 rounded-full flex items-center justify-center transition-all font-bold text-2xl">&times;</button>
-            <div id="modal-tag" class="inline-block px-4 py-1.5 rounded-full text-xs font-bold mb-6 border shadow-sm"></div>
-            <h2 id="modal-title" class="text-3xl md:text-4xl font-extrabold text-[#524538] mb-3"></h2>
+    <div id="project-modal" class="fixed inset-0 z-[200] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 bg-[#2D2A26]/60 backdrop-blur-md p-4">
+        <div class="bg-white p-8 md:p-12 w-full max-w-3xl rounded-[2rem] relative shadow-2xl transform scale-95 transition-transform duration-300 border-2 border-[#FFEEDF] max-h-[90vh] overflow-y-auto modal-scrollbar" id="modal-content-box">
+            <button onclick="closeProjectModal()" class="absolute top-6 right-6 text-[#8A7968] hover:text-[#FF6B35] hover:scale-110 bg-[#FFF0E5] hover:bg-[#FFEEDF] w-12 h-12 rounded-full flex items-center justify-center transition-all font-bold text-2xl z-50">&times;</button>
+            
+            <div id="modal-tag" class="inline-block px-4 py-1.5 rounded-full text-xs font-extrabold mb-6 border shadow-sm"></div>
+            <h2 id="modal-title" class="text-3xl md:text-4xl font-extrabold text-[#524538] mb-3 pr-10"></h2>
             <div id="modal-date" class="text-sm text-[#FFB800] font-extrabold mb-8 uppercase tracking-wider"></div>
+            
             <div id="modal-desc" class="text-[#8A7968] font-medium leading-relaxed space-y-4 text-lg"></div>
         </div>
     </div>
@@ -555,37 +568,71 @@
 
         initScrollReveal();
 
-        // Project Data
+        // Project Data with Detailed Descriptions and Grids for Images
         const projectData = {
             'cps': {
                 title: "CPS-Based Warehouse Simulation",
                 tag: "Ongoing", tagClass: "bg-[#FFF0E5] text-[#FF6B35] border-[#FFD2B8]",
                 date: "Jan 2026 - Present",
-                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Developing a cyber-physical simulation of dynamic RFID antenna coverage using NVIDIA Isaac Sim.</li><li>Evaluating tag detection accuracy, localization error, and system latency through simulation.</li></ul>"
+                desc: `
+                    <div class="mb-8 rounded-2xl overflow-hidden border border-[#FFEEDF] shadow-sm">
+                        <img src="https://i.ibb.co/G3MWJG9t/warehouse.jpg" alt="Warehouse Simulation" class="w-full h-auto max-h-[350px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <p class="mb-4">Spearheading the development of a cyber-physical digital twin for warehouse logistics using NVIDIA Isaac Sim. This simulation models dynamic RFID antenna coverage to optimize real-world asset tracking.</p>
+                    <p>By rigorously evaluating tag detection accuracy, localization errors, and system latency within a virtual 3D environment, the project bridges the gap between hardware RF propagation and software-driven warehouse automation.</p>
+                `
             },
             'gesture': {
                 title: "Gesture Controlled Bot",
                 tag: "Ongoing", tagClass: "bg-[#FFF0E5] text-[#FF6B35] border-[#FFD2B8]",
                 date: "Jan 2026 - Present",
-                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Developing an ESP32-based wireless robot controlled via gesture input.</li><li>Implementing PWM-based motor control for directional movement.</li><li>Integrating sensor modules and serial communication for command processing.</li></ul>"
+                desc: `
+                    <p class="mb-4">Designing and programming a wireless robotic system driven entirely by intuitive hand gestures. The architecture relies on an ESP32 microcontroller to process real-time analog signals from wearable motion sensors.</p>
+                    <p>These inputs are dynamically mapped to PWM signals, enabling smooth, multidirectional motor control over UART communication protocols, demonstrating robust hardware-software integration.</p>
+                `
             },
             'earplug': {
                 title: "User Controlled Self-Regulating Ear Plugs",
                 tag: "Patent Filed", tagClass: "bg-[#FFF9E5] text-[#FFB800] border-[#FFEEDF]",
                 date: "May 2025 - July 2025",
-                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Led hardware prototyping and mechanical design of a self-regulating ear pressure device.</li><li>Used 3D printing for enclosure development and functional testing.</li><li>Contributed to patent filing and technical documentation.</li></ul>"
+                desc: `
+                    <p class="mb-4">Led the end-to-end mechanical design and hardware prototyping of a novel, self-regulating ear pressure device aimed at healthcare and aviation applications.</p>
+                    <p>The iterative development process involved extensive 3D CAD modeling (SolidWorks/Fusion360) and 3D printing of functional enclosures. Successfully compiled the technical documentation and filed a patent for the unique pressure-balancing mechanism.</p>
+                `
             },
             'karaoke': {
                 title: "Karaoke Extraction",
                 tag: "MATLAB", tagClass: "bg-gray-100 text-gray-500 border-gray-200",
                 date: "March 2025",
-                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Used MATLAB for signal separation and isolated instrumental from a music track using frequency domain techniques.</li></ul>"
+                desc: `
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="rounded-2xl overflow-hidden border border-[#FFEEDF] shadow-sm h-48">
+                            <img src="https://i.ibb.co/N2nxBkkR/karaoke2.png" alt="Karaoke Spectrogram 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden border border-[#FFEEDF] shadow-sm h-48">
+                            <img src="https://i.ibb.co/4gX7qGhJ/karaoke.png" alt="Karaoke Spectrogram 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                    <p class="mb-4">Engineered a custom Digital Signal Processing (DSP) tool in MATLAB capable of extracting instrumental tracks from mixed audio files.</p>
+                    <p>The algorithm leverages frequency domain techniques, utilizing Fast Fourier Transforms (FFT) and phase manipulation to isolate and suppress vocal frequencies while preserving the fidelity of the underlying instrumental music.</p>
+                `
             },
             'arm': {
                 title: "Robotic Arm for Workshop Demo",
                 tag: "Hardware Prototype", tagClass: "bg-gray-100 text-gray-500 border-gray-200",
                 date: "Feb 2025",
-                desc: "<ul class='list-disc pl-5 space-y-3 marker:text-[#FFB800]'><li>Created a robotic arm prototype for a robotics club workshop.</li><li>Integrated Arduino servo control to demonstrate real-time movement.</li></ul>"
+                desc: `
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="rounded-2xl overflow-hidden border border-[#FFEEDF] shadow-sm h-56">
+                            <img src="https://i.ibb.co/d3SSvzF/robotic-arm.jpg" alt="Robotic Arm Hardware" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <div class="rounded-2xl overflow-hidden border border-[#FFEEDF] shadow-sm h-56">
+                            <img src="https://i.ibb.co/jZ4PR2G2/armbot1.jpg" alt="Robotic Arm Assembly" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                    </div>
+                    <p class="mb-4">Engineered a multi-axis robotic arm prototype designed specifically as an educational demonstrator for a university robotics workshop.</p>
+                    <p>Integrated an Arduino microcontroller to map analog joystick inputs to precise PWM signals, driving multiple servo motors. The project effectively demonstrated real-time kinematics, degrees of freedom, and manual actuation to junior engineering students.</p>
+                `
             }
         };
 
@@ -602,6 +649,9 @@
             const tag = document.getElementById('modal-tag');
             tag.innerText = data.tag;
             tag.className = `inline-block px-4 py-1.5 rounded-full text-xs font-extrabold mb-6 border shadow-sm ${data.tagClass}`;
+
+            // Reset scroll position when opening a new modal
+            modalBox.scrollTop = 0;
 
             modal.classList.remove('opacity-0', 'pointer-events-none');
             setTimeout(() => modalBox.classList.replace('scale-95', 'scale-100'), 50);
